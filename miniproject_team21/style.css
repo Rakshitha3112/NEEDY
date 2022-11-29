@@ -1,0 +1,308 @@
+/*CSS Reset*/
+*{
+    margin:0px; 
+    padding:0px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/*Header Styling*/ 
+.header{
+    min-height: 120vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(img/donate1..jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;   
+}
+
+/* Navigation bar styling*/
+nav{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: linear-gradient(rgba(10,10,10,0.7));
+    
+    
+  }
+/*Navbar Functionality*/ 
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+}
+/*Navbar image styling*/ 
+nav img{ 
+    width: 70px;
+}
+
+/*Navbar content functionality*/ 
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    color: white;
+    font-weight: 300;
+  }
+
+/*Navbar content styling*/ 
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    
+  }
+  .nav-links ul li ::after{
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover ::after{
+    width: 100%;
+  }
+  h1{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 200px;
+    color: white;
+  }
+  h2{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 100px;
+    color:#f44336;
+  }
+  p{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+  }
+  .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid #fff;
+    padding: 12px 34px;
+    font-size: 50px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    top: 50%;
+    left: 41%;
+    margin-top: 50px;
+  }
+  .hero-btn:hover{
+    border: 2px solid #f44336;
+    background: #f44336;
+    transition: 0.5s;
+  }
+  .container{
+    min-height: 80vh;
+    padding-top: 80px;
+    background: rgba(6, 10, 61, 0.43);
+    margin: auto;
+    background-color: black;
+  }
+  .topic{
+    font-size: larger;
+  }
+  .topic p{
+    color: White;
+  }
+  .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .col{
+    flex-basis: 31%;
+    background: rgb(43, 58, 85,0.5);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+   margin: auto;
+  }
+  .col h3{
+    text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+  color: white;
+  }
+  .col img{
+    padding-left: 200px;
+  } 
+  .footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: black;
+  }
+  
+  .footer p{
+    color: gray;
+    font-size: medium;
+  }
+  .footer h3{
+    color: white;
+  }
+  .icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    }
+    .fa-heart-o{
+      color: #f44336;
+    }
+
+    .btn{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 2px solid #fff;
+        padding: 12px 34px;
+        font-size: 20px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        text-align: center;
+        top: 50%;
+        left: 2%;
+        margin: 20px;
+    }
+    .btn:hover{
+        border: 2px solid #f44336;
+        background: #f44336;
+        transition: 0.5s;
+    }
+/* website background image designing */ 
+
+
+/*Button Styling*/
+
+
+    
+
+/*Designing of Contact Us*/ 
+#ContactUs{
+    width: l00vw; height: l00vh;
+    display:flex;
+    flex-direction: column; align-items: center;    
+    background-color: black;
+    color: white;
+}
+#ContactUs h1{
+    color: #f44336  ;
+}
+.form-shape input, .form-shape select, .form-shape textarea{
+    width: 92% ;
+    padding: 0.5rem;
+} 
+
+/*Changing the color of placeholder*/
+.placeholder{ 
+    color:gray;
+}
+/*Making the webpage responsive using media queries*/ 
+@media only screen and (max-width: 1131px)
+{
+    #row4{
+        width: 42vw;
+    
+    }
+    
+    #row5{
+    width: 42vw;
+    
+    }
+    #row6{
+        margin-top: 20px; width:90vw;
+    
+    }
+    
+}
+
+@media only screen and (min-width:600px) and (max-width:781px)
+{
+    #row4{
+        width:84vw; margin: auto; margin-left: 22px;
+        }
+        #row5{
+            width:84vw; margin: auto; margin-top: 20px; margin-left: 22px;
+        }
+        #row6{
+        width:84vw; margin: auto; margin-top: 20px; margin-left: 22px;
+        }
+}
+
+
+@media only screen and (max-width:600px)
+{
+    #row4{
+        width:78vw; margin: auto; margin-left: 3px;
+    
+    }
+    
+    #row5{
+        width:78vw; margin: auto; margin-top: 20px; margin-left: 3px;
+    }
+    #row6{
+        width:78vw; margin: auto; margin-top: 20px; margin-left: 3px;
+    
+    }
+}
+
+@media only screen and (min-height: l000px)
+{
+    #navbar{
+        height:10vh;
+        }
+        #container1::before{
+            height:39vh;
+        }
+        #container1{ 
+            height:44vh
+        }
+}
+.icons-contactus .fa{
+    color: #f44336;
+    margin: 0 13px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 30px 0;
+    font-size: 200px;
+    position: relative;
+    padding-top: 300px;
+    padding-left: 400px;
+}
+.icons-contactus1{
+  color: #f44336;
+    margin: 40px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 100px;
+    position: relative;
+    padding-top: 200px;
+    padding-left: 400px;
+}
+.icons-contactus1 i{
+  padding: 30px;
+}
+.con{
+  padding-top: 100px;
+}.row img{
+  width: 300px;
+}
